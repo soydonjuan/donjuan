@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow products to wrap to the next line on smaller screens */
+        }
+
+        .product {
+            flex: 0 0 calc(50% - 10px);
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 100%; /* Make the image take up the full width of its container */
+            max-width: 200px; /* Set a maximum width for the image */
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product h2 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px; /* Adjust font size */
+        }
+
+        .product p {
+            margin: 0;
+            font-weight: bold; /* Make price text bold */
+        }
+
+        /* Hide the Add to Cart button */
+        .add-to-cart {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product">
+            <img src="img/product-img/product-1.png" alt="">
+            <h2>Mafia blanca HG</h2>
+            <p>BS180.00</p>
+        </div>
+        
+        <div class="product">
+            <img src="img/product-img/product2.png" alt="Product 2">
+            <h2>Mafia rojo HG</h2>
+            <p>BS180.00</p>
+        </div>
+         
+        <div class="product">
+            <img src="img/product-img/product-3.png" alt="Product 3">
+            <h2>Mafia azul HG</h2>
+            <p>BS180.00</p>
+        </div>
+         
+        <div class="product">
+            <img src="img/product-img/product-4.png" alt="Product 4">
+            <h2>Mafia formal HG</h2>
+            <p>BS180.00</p>
+        </div>
+                      
+        <!-- Repeat for additional products -->
+    </div>
+
+    <!-- You can include your JavaScript files here -->
+    <script src="script.js"></script> <!-- If you have a separate JS file -->
+</body>
+</html>

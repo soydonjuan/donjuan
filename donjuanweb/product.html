@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .product-detail-container {
+            text-align: center;
+        }
+        .product-image {
+            margin-bottom: 20px;
+        }
+        .product-image img {
+            max-width: 200%;
+            max-height: 500px; /* Adjust the max-height as needed */
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .product-info {
+            /* Add styling for product info if needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img id="product-image" src="img/product-img/product-1.png" alt="Product Image">
+        </div>
+        <div class="options">
+            <label for="size">Size:</label>
+            <select name="size" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <label for="color">Color:</label>
+            <select name="color" id="color"></select>
+        </div>
+        <div class="product-info">
+            <h2 id="product-name"></h2>
+            <p id="product-description"></p>
+            <p id="product-price"></p>
+        </div>
+    </div>
+</body>
+</html>
